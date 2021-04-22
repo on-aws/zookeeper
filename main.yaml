@@ -96,7 +96,7 @@ Resources:
   Zookeeper:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: !Sub https://s3.amazonaws.com/${TemplatesBucket}/kafka/zookeeper.yaml
+      TemplateURL: !Sub https://s3.amazonaws.com/${TemplatesBucket}/zookeeper/template.yaml
       Parameters:
         App: !Ref App
         Owner: !Ref Owner
